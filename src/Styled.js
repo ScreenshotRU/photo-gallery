@@ -186,35 +186,27 @@ export const NavButton = styled.button`
 
 export const BackButton = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-  width: 150px;
-  height: 50px;
+  width: 100px;
+  height: 30px;
   background: #2d2c3f;
   position: fixed;
-  margin-bottom: 25px;
   color: whitesmoke;
   z-index: 2;
   border: 2px solid whitesmoke;
-  bottom: 10px;
+  bottom: 20px;
   left: 20px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.1s ease-in-out;
-  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-    6px 6px 10px rgba(0, 0, 0, 0.2);
-
+  transition: all 0.3s ease-in-out;
   &:hover {
-    opacity: 0.3;
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-      6px 6px 10px rgba(0, 0, 0, 0.2);
+   background: #403f55; 
   }
   &:active {
     opacity: 1;
-    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
-      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
     color: #79e3b6;
   }
   & > span {
-    line-height: 50px;
+    line-height: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     font-weight: bold;
