@@ -46,6 +46,7 @@ AlbumComponent.defaultProps = {
   userId: 1,
 };
 
+
 AlbumComponent.propTypes = {
   photos: PropTypes.arrayOf(
     PropTypes.shape({
