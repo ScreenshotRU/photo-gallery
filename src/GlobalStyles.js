@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2d2c40;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #2d2c40;
+}
+
+.link {
+  padding: 5px;
+  color: whitesmoke;
+}
+
+.link:hover {
+  color: goldenrod;
+}
+
+.link.album-title {
+  margin: 1em;
+}
+`;
+
+
+export default GlobalStyle;
