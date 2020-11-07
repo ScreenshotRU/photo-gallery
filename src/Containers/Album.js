@@ -11,7 +11,8 @@ const Album = () => {
   const userId = urlParams.get('user');
 
   const togglePopup = (index) => {
-    setCurrentIndex(index);
+    const currentIndex = typeof index === 'number' ? index : 0;
+    setCurrentIndex(currentIndex);
     setIsOpen(!isOpen);
   };
 
