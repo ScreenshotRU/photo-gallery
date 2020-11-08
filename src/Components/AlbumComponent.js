@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LoaderComponent from './LoaderComponent';
 import PopUpComponent from './PopUpComponent';
-import { BackButton, FullItem, FullImage, Wrapper } from '../Styled';
-import { Link } from 'react-router-dom';
+import { FullItem, FullImage, Wrapper } from '../Styled';
+
+import BackButtonComponent from './BackButtonComponent';
 
 const AlbumComponent = ({isLoading, photos, togglePopup, currentIndex, hasError, userId, isOpen}) => (
   <Wrapper>
@@ -28,11 +29,7 @@ const AlbumComponent = ({isLoading, photos, togglePopup, currentIndex, hasError,
       />
     )}
     {hasError && <span>Has error: {JSON.stringify(hasError)}</span>}
-    <Link to={`/user?id=${userId}`} className="link">
-      <BackButton>
-        <span>Go Back</span>
-      </BackButton>
-    </Link>
+      <BackButtonComponent backButtonUrl={`/user?id=${userId}`} />
   </Wrapper>
 );
 

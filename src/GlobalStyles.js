@@ -24,11 +24,11 @@ code {
 
 .link {
   padding: 5px;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 .link:hover {
-  color: goldenrod;
+  color: #daa520;
 }
 
 .link.album-title {

@@ -58,7 +58,7 @@ export const AlbumLogo = styled.img`
 `;
 
 export const Text = styled.p`
-  color: whitesmoke;
+  color: #f5f5f5;
 `;
 
 export const LoaderWrap = styled.div`
@@ -81,10 +81,10 @@ export const DualRing = styled.div`
     width: 64px;
     height: 64px;
     margin: 8px;
-    color: whitesmoke;
+    color: #f5f5f5;
     border-radius: 50%;
-    border: 6px solid whitesmoke ;
-    border-color: whitesmoke transparent whitesmoke transparent;
+    border: 6px solid #f5f5f5 ;
+    border-color: #f5f5f5 transparent #f5f5f5 transparent;
     animation: ${rotate} 1.2s linear infinite;
   }
 `;
@@ -103,7 +103,7 @@ export const PopUpWrapper = styled.div`
 `;
 
 export const IconClose = styled.span`
-  color: whitesmoke;
+  color: #f5f5f5;
   cursor: pointer;
   position: fixed;
   right: 5%;
@@ -113,7 +113,7 @@ export const IconClose = styled.span`
   height: 36px;
   line-height: 34px;
   text-align: center;
-  border: 2px solid whitesmoke;
+  border: 2px solid #f5f5f5;
 `;
 
 export const ScrollContainer = styled.div`
@@ -156,7 +156,7 @@ export const Card = styled.div`
     height: 100%;
   }
   & > span {
-    color: whitesmoke;
+    color: #f5f5f5;
     bottom: 0;
     background: rgb(0, 0, 0, 0.6);
     width: 100%;
@@ -175,8 +175,8 @@ export const NavButton = styled.button`
   height: 40px;
   cursor: pointer;
   background: #2d2c40;
-  color: whitesmoke;
-  border: 2px solid whitesmoke;
+  color: #f5f5f5;
+  border: 2px solid #f5f5f5;
   position: absolute;
   ${(props) => (props.position === 'left' ? leftBtn : rightBtn)};
   top: 50%;
@@ -190,9 +190,9 @@ export const BackButton = styled.div`
   height: 30px;
   background: #2d2c3f;
   position: fixed;
-  color: whitesmoke;
+  color: #f5f5f5;
   z-index: 2;
-  border: 2px solid whitesmoke;
+  border: 2px solid #f5f5f5;
   bottom: 20px;
   left: 20px;
   text-align: center;
@@ -203,7 +203,7 @@ export const BackButton = styled.div`
   }
   &:active {
     opacity: 1;
-    color: #79e3b6;
+    color: #daa520;
   }
   & > span {
     line-height: 30px;

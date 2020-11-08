@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import LoaderComponent from './LoaderComponent';
-import { BackButton, Item, Text, Wrapper } from '../Styled';
+import { Item, Text, Wrapper } from '../Styled';
 import React from 'react';
 import PropTypes from 'prop-types';
+import BackButtonComponent from './BackButtonComponent';
 
 const AlbumsListComponent = ({albums, hasError, isLoading, photos}) => {
   return (
@@ -36,11 +37,7 @@ const AlbumsListComponent = ({albums, hasError, isLoading, photos}) => {
       {hasError && (
         <span>Has error: {JSON.stringify(hasError)}</span>
       )}
-      <Link to={`/`} className="link">
-        <BackButton>
-          <span>Go Back</span>
-        </BackButton>
-      </Link>
+      <BackButtonComponent backButtonUrl="/" />
     </Wrapper>
   );
 };
