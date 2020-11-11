@@ -37,7 +37,7 @@ const AlbumsListComponent = ({albums, hasError, isLoading, photos}) => {
       {hasError && (
         <span>Has error: {JSON.stringify(hasError)}</span>
       )}
-      <BackButtonComponent backButtonUrl="/" />
+      <BackButtonComponent backButtonUrl="/photo-gallery" />
     </Wrapper>
   );
 };

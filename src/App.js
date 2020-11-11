@@ -11,7 +11,7 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <Route exact
-          path="/"
+          path="/photo-gallery"
           render={() => <UsersList /> }
         />
           <Route exact
